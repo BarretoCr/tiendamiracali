@@ -31,7 +31,7 @@
 </head>
 
 <body>
-  <!-- header section strats -->
+  <!-- header section starts -->
   <header class="header_section">
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -77,10 +77,6 @@
   </header>
   <!-- end header section -->
 
-
-
-
-
   <!-- service section -->
   <section class="service_section layout_padding-top">
     <div class="container">
@@ -119,12 +115,9 @@
   <!-- end service section -->
 
   <!-- security section -->
-
   <section class="security_section layout_padding">
     <h3>
       Nuestros productos
-
-
     </h3>
     <h2>
       Para el Hogar
@@ -147,10 +140,18 @@
               <a href=""> Ver mas</a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
+
+    <!-- Sección añadida con enlace llamativo -->
+    <div class="manual_interactivo" style="text-align: center; margin-top: 30px;">
+      <a href="https://www.dropbox.com/scl/fi/5uq6bj..." style="font-size: 24px; font-weight: bold; color: #d9534f; text-decoration: none;">
+        📘 Accede al MANUAL INTERACTIVO DE MIRACALI aquí
+      </a>
+    </div>
+    <!-- Fin de la sección añadida -->
+
     <div class="security_btn">
       <a href="">
         <span>
@@ -162,12 +163,7 @@
   </section>
   <!-- end security section -->
 
-
-
-
-
-
-   <!-- info section -->
+  <!-- info section -->
   <section class="info_section layout_padding">
     <div class="container">
       <div class="row">
@@ -208,7 +204,6 @@
             <div>
               <h3>
                 boletín informativo
-
               </h3>
               <form action="">
                 <input type="email" placeholder="ENTER YOUR EMAIL">
@@ -238,9 +233,7 @@
       </div>
     </div>
   </section>
-
   <!-- end info section -->
-
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
@@ -253,81 +246,9 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
-  </script>
-  <script type="text/javascript">
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: true,
-      navText: [],
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
-      }
-    });
-  </script>
-
-  <script>
-    $(".nav_search-btn").click(function () {
-      if ($(".nav_search-input").hasClass("d-none")) {
-        event.preventDefault();
-        $(".nav_search-input")
-          .animate({
-              left: "-1000px"
-            },
-            "1000000"
-          )
-          .removeClass("d-none");
-      } else {
-        $(".nav_search-input")
-          .animate({
-              left: "0px"
-            },
-            "1000000"
-          )
-          .addClass("d-none");
-      }
-    });
-  </script>
-
-  <script>
-    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-    // Australia.
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: {
-          lat: 2.954196,
-          lng: -75.287460
-        },
-      });
-
-      var image = 'images/maps-and-flags.png';
-      var beachMarker = new google.maps.Marker({
-        position: {
-          lat: 2.954196,
-          lng: -75.287460,
-        },
-        map: map,
-        icon: image
-      });
-    }
-  </script>
-  <!-- google map js -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-  </script>
-  <!-- end google map js -->
-
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
 </html>
